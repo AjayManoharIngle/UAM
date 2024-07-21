@@ -1,0 +1,84 @@
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('secretKey','keykeykeykeykeykeykeykeykeykeykeykeykeykeykeykeykeykeykeykeykeykeyke');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('tokenRefresh','Refresh');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('tokenExpirationAfterSeconds','300');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('tokenPrefix','Bearer');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('refreshTokenExpirationAfterSeconds','1500');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('allUrlPublicOfExternalSystem','true');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('applicationApiPermitall','/**');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('externalSystemHandShakeToken','aprd_app');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('allowPreflightRequest','true');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('allowedConcurrentUserLogin','5');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('captchaExpireInSeconds','180');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('otpExpireInSeconds','180');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('captchaEncryptionKey','TheBestSecretKey');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('otpEncryptionKey','TheFrndSecretKey');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('capthaEnable','true');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('otpEnable','true');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('otpDefault','true');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('capitalCaseLetters','ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('lowerCaseLetters','abcdefghijklmnopqrstuvwxyz');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('specialCharacters','!@#$');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('oneNumbers','1234567890');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('passwordLength','8');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('passwordResetSessionExpireInSeconds','180');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('publicKeyEncryption','MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhwGG3Q8EzEGJ+T72hiacKK8WyUiKpMfegJ9cUbNI1wenAfOpbqGyd3ZKKCFgp0aq8xFcYICtCpvK8gilWhC144t1aV15Z64/vGv+mVHukR4NzFP3zX6E15jtPeVFhZOmeqo+8QJltHzYWlY/cZbMWG6lWt4it/ZauDN+AZNJ7mbQjbtLcluR8s5574gwdE8k9SfEK9GMMJdN3O9VuAqqD2vQlR15XnbLtkrdfPPX1C+RqYuXyHq5DEaEOXajSF4g5vVHkaOCF4Lm7uAsjItvl+SsV4oAdqRnpFBfy5LHP0xWim1e3/RTvDaitoPEl90PfIbZ1zpBDsYwuCDZXw5BTwIDAQAB');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('privateKeyEncryption','MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCHAYbdDwTMQYn5PvaGJpworxbJSIqkx96An1xRs0jXB6cB86luobJ3dkooIWCnRqrzEVxggK0Km8ryCKVaELXji3VpXXlnrj+8a/6ZUe6RHg3MU/fNfoTXmO095UWFk6Z6qj7xAmW0fNhaVj9xlsxYbqVa3iK39lq4M34Bk0nuZtCNu0tyW5HyznnviDB0TyT1J8Qr0Ywwl03c71W4CqoPa9CVHXledsu2St1889fUL5Gpi5fIerkMRoQ5dqNIXiDm9UeRo4IXgubu4CyMi2+X5KxXigB2pGekUF/Lksc/TFaKbV7f9FO8NqK2g8SX3Q98htnXOkEOxjC4INlfDkFPAgMBAAECggEAdDEoNRE7+99cNBuwaHzKYWlvnwTD7lXmdaSx+87lncuEPPXMmN6pjo9L+4XefZkgf9otOxED3OGApRYz2XQQVyorfudoGYeqayw3DxWo0VSgY37RAxcklbmUVXUBhJky6tejHCIIDnJ0citQpx41+NYhkjckgleQdIA8rnZpZrfhSa3SQ759OA6oZbbC3c0Dc+TLrzNyHLQOzY0nX+Xew8eJdtqJZHOLYwOdlHF8CP79dPCPPRTa6cayAE5n6Hee6LVdNciCMytz6H1A3d0AWNEVq+7Iyf9QktnH5X9w23Ze/jQZ9ifMd7WnUW81wWTPx0ZJ2Zaq9Jk87cdxSqvOIQKBgQD22uVfI6Zg9Qz+zIh1TM/SaL/dhKRQWc4yhhCljXXnvjBnPcUAYcB2fZUjc9hDR07co3nSDpqaacDpPFjfkCZvakeUl81dchxZzfgaVeLOuEmBXC2T+o1BOLhyHHWwk9q34/GzKWZXhjFKBl31MfU1wV0XgJOhV66VkaUa35YulQKBgQCMAeKq/2wv0VmPqwShVfAOxc9d5LUB0NbQ3H0swe53uusky9OPhZOahlNvKkfbhio5Ak1fom/xCU6GYzweR9LdXZQFBWStFJdDv1HMVwUnMS/hV3U87xUDqYt/hjtuvkq9QbEsCenIJTx8ntWya5zduYm4UU+ft/HRsQ6MLnnLUwKBgQCtCUWtSf0Pi9afKNoid0RaNmj/q0HOvRTH36f9lEpotq2RQQA9w0e5B1CqeELI7kw+Zy02bFw9DxJVq6KUm6QFh1dDtqES9rEe1j0qoLeKti14Sxf72a54YH0SKBbrPskbC+JZ9xQxF/Sm8g2cmXdMRg2uMsfJWgAcAerdCotofQKBgFH2MJnmWZFMv1+JwHYqdxRO3OycnRJpDbjLu0PebBoPhOTPphRZIGXPyTxExjhPPJyPKniYAWxcBGpL4b/gUCNjSun9lEh2y27Pq7UyJEQjWWJT7sAzPlwcfxuym0xjfiF5OZ0MWJ3gnp5d5cBDm1t56JPMlg5sgtY9DsUl2AsdAoGBAM059/y4whJ5YSWcR0HHcsIaQCRgyugYFu/smGu+RZXvL8SXL4v+ZDoSynJWCRNQFHlRvsx44X+GH2AKR5LsVW5lASu7GU432h+vUm67jOa55xo0JAuVmYdiafBC20foHmkujmLFlceAR7CJldwfDD/hTGuvJrlo6BqXIAwIHUYp');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('contextRootPath','/kawach');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('blockUserMessage','user blocked temporarily');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('passExpiredMessage','Your Password Expired Please Reset your password and re-longin');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('userBlockAfterNumberOfUnSuccesAttempt','3');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('userWillBlockForNextSecond','86400');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('passwordExpiredInDays','30');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('timeSessionForUnSuccessAttemptInSecond','10');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('lastNumberOfPassCanNotUse','3');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('disableUser','Account is disabled. Contact your administrator.');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('firstUserRole','system-');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('firstUserIpAddressToAccess','0:0:0:0:0:0:0:1');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('apiRateLimitBy','userName');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('apiRateLimitCommaTime','20,1');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('logFilesLocation','/home/weblogic/kavach/logs/');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('notificationSmsUsername','demorohithtp3');		
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('notificationSmsPassword','LBoZm49Q5n-o-');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('notificationSmsSenderId','UNIMSG');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('notificationSmsTextTemplate','Dear Customer, Your Demo Account has been created-Unimobile');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('notificationSmsUrlEncodeEnable','false');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('notificationSmsVendorUrl','https://http.myvfirst.com/smpp/sendsms');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('notificationSmsDeliveryReportUrl',null);
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('notificationSmsUdh',null);
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('notificationSmsVendorTokenUrl','https://http.myvfirst.com/smpp/api/sendsms/token');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('notificationSmsIsVendorUrlPostBody','false');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('notificationSmsCategory','bulk');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('notificationSmsIsVendorUrlGet','false');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('needToUseCustomeExpiryTime','true');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('notificationSmsTokenExpiryInMinutes','60');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('proxyIp','172.23.37.4');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('proxyPort','8080');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('smsOtpOnDevEnv','true');
+insert into TBL_AUTH_MANAGEMENT_PROPERTIES values('otpSmsIntegrated','false');
+
+
+Insert into TBL_APPLICATION_PROPERTIES (S_KEY,S_VALUE) values ('ldapUrl','ldap://172.17.60.79:389');
+Insert into TBL_APPLICATION_PROPERTIES (S_KEY,S_VALUE) values ('dnUsernameAttribute',null);
+Insert into TBL_APPLICATION_PROPERTIES (S_KEY,S_VALUE) values ('domainName','devenv.local');
+Insert into TBL_APPLICATION_PROPERTIES (S_KEY,S_VALUE) values ('baseDn','OU=Production Users,DC=devenv,DC=local');
+Insert into TBL_APPLICATION_PROPERTIES (S_KEY,S_VALUE) values ('searchFilterObject','(objectClass=*)');
+Insert into TBL_APPLICATION_PROPERTIES (S_KEY,S_VALUE) values ('dnForSearchFilter','OU=Production Users,DC=devenv,DC=local');
+Insert into TBL_APPLICATION_PROPERTIES (S_KEY,S_VALUE) values ('usernameAttribute','sAMAccountName');
+Insert into TBL_APPLICATION_PROPERTIES (S_KEY,S_VALUE) values ('mobileAttribute',null);
+Insert into TBL_APPLICATION_PROPERTIES (S_KEY,S_VALUE) values ('firstnameAttribute','givenName');
+Insert into TBL_APPLICATION_PROPERTIES (S_KEY,S_VALUE) values ('lastnameAttribute','sn');
+Insert into TBL_APPLICATION_PROPERTIES (S_KEY,S_VALUE) values ('emailAttribute','mail');
+Insert into TBL_APPLICATION_PROPERTIES (S_KEY,S_VALUE) values ('generateMobileNumber','true');
+Insert into TBL_APPLICATION_PROPERTIES (S_KEY,S_VALUE) values ('corsAllowedHosts','http://localhost:9010,http://localhost:9011,http://172.17.60.137:9010,http://172.17.60.119:7777,http://localhost:4200,http://gpx-frontend-route-gpx-flow-config.apps.ocpcl.rebit.local,http://gpx-frontend-ngcb.apps.ocpcl.rebit.local');
+Insert into TBL_APPLICATION_PROPERTIES (S_KEY,S_VALUE) values ('apconnectBackendHost','http://172.17.60.137:9010/aprd-zuul');
+Insert into TBL_APPLICATION_PROPERTIES (S_KEY,S_VALUE) values ('otpSmsIntegrated','true');
+
+Insert into TBL_OFFCLOCATION_M (N_OFFCLOCID,S_LOCATIONSN,S_LOCATIONLN,N_STATUS,S_CREATEDBY,DT_CREATEDDATE,S_UPDATEDBY,DT_UPDATEDDATE) values (1,'DF','DEFAULT',1,'system-admin',sysdate,null,sysdate);
+
+Insert into TBL_REGIONAL_OFFICE_M (S_ROCODE,S_RONAME,S_CREATEDBY,DT_CREATEDDATE,S_UPDATEDBY,DT_UPDATEDDATE) values ('IND','INDIA','system-admin',sysdate,null,null);
+
+Insert into TBL_ROLE_M (N_ROLEID,S_ROLENAME,N_STATUS,S_CREATEDBY,DT_CREATEDDATE,S_UPDATEDBY,DT_UPDATEDDATE) values (1,'system-admin',1,'system-admin',sysdate,null,null);
+
+Insert into TBL_USER_M (S_USEREMAILID,S_USERNAME,S_FIRSTNAME,S_LASTNAME,S_ROCODE,N_OFFCLOCID,N_USERMOBNO,N_STATUS,S_CREATEDBY,DT_CREATEDDATE,S_UPDATEDBY,DT_UPDATEDDATE,S_PASSWORD,N_ISLDAPUSER,N_UNSUCCESS_ATTEMPT,DT_BLOCK_TILL,DT_PASS_EXPIRED,DT_LAST_ATTEMPT,DT_LAST_FAILED_ATTEMPT,DT_LASTLOGINDATE) values ('super.admin@devenv.local','super.admin','Super','Admin',null,null,'9999999999',1,'system-admin',to_date('14-07-22','DD-MM-RR'),'super.admin',sysdate,'530d88ae6af10e7b925edb999bc624c61cd54bf4c9c2c9b16ec882ca59a37ce6db0476efe7dc245523f128b0594e656e0c4426432e60596b5bd72de896cf9cd8',0,0,null,null,null,sysdate,sysdate);
+
+Insert into TBL_USER_ROLE_MAPPING (N_USERID,N_ROLEID) values (1,1);

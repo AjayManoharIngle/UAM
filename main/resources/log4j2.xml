@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- -DLog4jContextSelector=org.apache.logging.log4j.core.async.AsyncLoggerContextSelector -->
+<Configuration status="error">
+ <Properties>
+        <Property name="LOG_PATTERN">%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</Property>
+  </Properties>
+
+  <CustomLevels>
+    <CustomLevel name="SUCCESS" intLevel="10" />
+    <CustomLevel name="FAILED" intLevel="20" />
+  </CustomLevels>
+  
+  <Appenders>
+    <JDBC name="databaseAppender" tableName="TBL_Event_Entity">
+      <ConnectionFactory class="org.rebit.auth.config.ConnectionFactory" method="getDatabaseConnectionWithDataSource" />
+      <Column name="N_EVENT_ID" literal="SEQ_Event_Entity.NEXTVAL" isUnicode="false" />
+      <Column name="DT_EVENTDATE" isEventTimestamp="true" />
+      <Column name="S_LEVEL" pattern="%level" isUnicode="false"/>
+      <Column name="S_LOGGER" pattern="%logger" isUnicode="false"/>
+      <Column name="S_MESSAGE" pattern="%message" isUnicode="false"/>
+      <Column name="S_TYPE" pattern="%X{type}" isUnicode="false"/>
+      <Column name="S_USER_ID" pattern="%X{userName}" isUnicode="false"/>
+      <Column name="S_IP_ADDRESS" pattern="%X{ipAddress}" isUnicode="false"/>
+      <Column name="S_JSON_REQUEST" pattern="%X{jsonRequest}" isUnicode="false"/>
+      <Column name="S_APPLICATION_NAME" pattern="%X{applicationName}" isUnicode="false"/>
+      <!-- <Column name="S_THROWABLE" pattern="%ex{full}" isUnicode="false"/> -->
+   <Filters>
+        <ThresholdFilter level="FAILED"  onMatch="ACCEPT" onMismatch="DENY"/>
+    </Filters>
+   
+    </JDBC>
+    
+    <Console name="Console" target="SYSTEM_OUT" follow="true">
+            <PatternLayout pattern="${LOG_PATTERN}" />
+     <Filters>
+        <ThresholdFilter level="INFO"  onMatch="ACCEPT" onMismatch="DENY"/>
+    </Filters>
+    </Console>
+    
+    <RollingFile name="LogToRollingFile" fileName="/home/weblogic/kavach/logs/kavach.log" filePattern="/home/weblogic/kavach/logs/kavach-%d{MM-dd-yyyy}-%i.log.gz">
+    <!--  <RollingFile name="LogToRollingFile" fileName="./aprd/logs/apconnectusermanagement.log" filePattern="./aprd/logs/$${date:yyyy-MM}/apconnectusermanagement-%d{MM-dd-yyyy}-%i.log.gz"> -->
+        <PatternLayout>
+            <Pattern>${LOG_PATTERN}</Pattern>
+        </PatternLayout>
+        <Policies>
+            <TimeBasedTriggeringPolicy />
+            <SizeBasedTriggeringPolicy size="2 MB"/>
+        </Policies>
+    </RollingFile>
+    
+    <Async name="AsyncDatabaseAppender">
+      <AppenderRef ref="databaseAppender"/>
+    </Async>
+    
+  </Appenders>
+  <Loggers>
+  
+  <Logger name="org.rebit.auth" additivity="false">
+            <AppenderRef ref="AsyncDatabaseAppender" level="FAILED"/>
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="LogToRollingFile" level="INFO"/>
+  </Logger>
+ <!--  <Logger name="org.rebit.auth" additivity="false">
+            <AppenderRef ref="LogToRollingFile" level="INFO"/>
+  </Logger> -->
+  
+  
+    <!-- <Root level="INFO">
+    if you want to print log in only in console enable this appender 
+      <AppenderRef ref="Console"/>
+    </Root> --> 
+    
+    <Root level="INFO">
+      <AppenderRef ref="Console"/>
+      <AppenderRef ref="LogToRollingFile" level="INFO"/>
+    </Root> 
+    
+  </Loggers> 
+</Configuration>
